@@ -40,5 +40,5 @@ int linearSearch (const int array[],int key,int size)
 			return n;
 		}
 	} 
-	return -1;
+	return -1; 
 }
