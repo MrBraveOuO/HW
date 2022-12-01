@@ -14,18 +14,20 @@ int main(int argc, char *argv[]) {
 		scanf("%d",&array[i]);
 	}
 	ans=recusiveMaximum(array);
-	//printf("\n%d",ans);
+	printf("\n%d",ans);
 	return 0;
 }
 
 int recusiveMaximum(int*data)
 {
-	
+	int a;
 	if(*data){
-		a=recusiveMaximum(data+1);
-		printf("\n%d",data[])
+		a=(*data>recusiveMaximum(data+1))?*data:recusiveMaximum(data+1);		
+	}
+	else{
+		return 0;
 	}
 	
-	return 0;
+	return a;
 }
 
