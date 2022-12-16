@@ -47,9 +47,9 @@ void shuffle(Card * const wDeck)
 	{
 		j = rand() % 52;
 	
-	temp = wDeck[i];
-	wDeck[i] = wDeck[j];
-	wDeck[i] = temp;
+		temp = wDeck[i];
+		wDeck[i] = wDeck[j];
+		wDeck[i] = temp;
 	}
 }
 void deal(const Card * const wDeck)
